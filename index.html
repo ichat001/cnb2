@@ -84,7 +84,7 @@
 		</head>
 		<body>
 			<script type="module">
-				import { createChat } from 'https://cdn.jsdmirror.com/npm/n8n-chat-atekron@0.49.0/dist/chat.bundle.es.js';
+				import { createChat } from 'https://cdn.jsdmirror.com/npm/@n8n/chat/dist/chat.bundle.es.js';
 
 				(async function () {
 					const authentication = 'none';
@@ -117,23 +117,22 @@
 
 					createChat({
 						mode: 'fullscreen',
-						webhookUrl: 'https://oe8cah95kh-5678.cnb.run/webhook/31bb6e92-f643-46eb-8be9-d9f87ca287a2/chat',
+						webhookUrl: 'https://f0ib1untcc-5678.cnb.run/webhook/8513c200-a37c-4997-bea1-fb003435663a/chat',
 						showWelcomeScreen: false,
 						loadPreviousSession: false,
 						metadata: metadata,
 						webhookConfig: {
 							headers: {
 								'Content-Type': 'application/json',
-								'X-Instance-Id': '1c905d75c75fc654dba3321432aba8c070d4d4263b1d82bc67ae06f4343c2551',
+								'X-Instance-Id': 'b5f562fe48c5a50670078d1aeaa5e083e5881ef5c4a911873853f0b2263c2a79',
 							}
 						},
-						allowFileUploads: true,
+						allowFileUploads: false,
 						allowedFilesMimeTypes: '',
 						i18n: {
-							en: {"inputPlaceholder":"输入你的问题 . . .","subtitle":"","title":"😊 酷狗音乐ˇ24小时ˇ播放助理"},
+							en: {"inputPlaceholder":"输入你的问题 . . .","subtitle":"","title":"😊 干货分享家ˇ24小时ˇ办公助理"},
 						},
 						initialMessages: ["欢迎光临!"],
-						enableStreaming: false,
 					});
 				})();
 			</script>
